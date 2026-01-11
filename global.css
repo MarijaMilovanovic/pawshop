@@ -366,6 +366,7 @@ li.socials a img {
 @media screen and (min-width: 968px) {
 	footer {
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	.footerContainer {
