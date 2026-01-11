@@ -9,9 +9,11 @@
 	--shadow-card: 0 1px 4px rgba(0, 0, 0, 0.1);
 	--background-secondary: #F9FAFB;
 	--peach: #FFB8A0;
+	--peach-light: #fee6de;
 	--sky-blue: #A8D8FF;
 	--pink: #FFC4DD;
 	--mint: #B4E5D4;
+	--placeholder: #A0AEC0;
 }
 
 html, body {
@@ -360,6 +362,7 @@ li.socials a img {
 	line-height: 18px;
 	color: var(--text-light);
 	text-align: center;
+	width: 100%;
 }
 
 
