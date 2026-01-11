@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+	<title>PawShop | Marija Milovanovic</title>
+</head>
+<body>
+	<nav class="topNavigation">
+		<div class="navContainer">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.svg" alt="PawShop Logo">PawShop</a>
+			</div>
+			<ul class="navLinks">
+				<li><a href="index.html" class="currentLink">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="cartIcon">
+				<a href="cart.html" class="cartLink">
+					<svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_2807)">
+						<path d="M6.66659 18.3334C7.12682 18.3334 7.49992 17.9603 7.49992 17.5001C7.49992 17.0398 7.12682 16.6667 6.66659 16.6667C6.20635 16.6667 5.83325 17.0398 5.83325 17.5001C5.83325 17.9603 6.20635 18.3334 6.66659 18.3334Z" stroke="#364153" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M15.8333 18.3334C16.2936 18.3334 16.6667 17.9603 16.6667 17.5001C16.6667 17.0398 16.2936 16.6667 15.8333 16.6667C15.3731 16.6667 15 17.0398 15 17.5001C15 17.9603 15.3731 18.3334 15.8333 18.3334Z" stroke="#364153" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1.7085 1.70825H3.37516L5.59183 12.0583C5.67314 12.4373 5.88405 12.7761 6.18826 13.0165C6.49246 13.2568 6.87092 13.3835 7.2585 13.3749H15.4085C15.7878 13.3743 16.1556 13.2443 16.451 13.0064C16.7465 12.7686 16.9519 12.437 17.0335 12.0666L18.4085 5.87492H4.26683" stroke="#364153" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+						</g>
+						<defs>
+						<clipPath id="clip0_1_2807">
+						<rect width="20" height="20" fill="white"/>
+						</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+
+			<div class="navigationMenuButton">
+				<input type="checkbox" id="menuToggle"/>
+				<img src="images/menu-icon.svg" alt="Menu Icon">
+				<div class="navigationMenu">
+					<ul class="menuLinks">
+						<li><a href="index.html" class="currentLink">Home</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<hr/>
+						<li><a href="cart.html" class="cartLinkMobile">
+							<svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_2807)">
+								<path d="M6.66659 18.3334C7.12682 18.3334 7.49992 17.9603 7.49992 17.5001C7.49992 17.0398 7.12682 16.6667 6.66659 16.6667C6.20635 16.6667 5.83325 17.0398 5.83325 17.5001C5.83325 17.9603 6.20635 18.3334 6.66659 18.3334Z" stroke="#364153" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M15.8333 18.3334C16.2936 18.3334 16.6667 17.9603 16.6667 17.5001C16.6667 17.0398 16.2936 16.6667 15.8333 16.6667C15.3731 16.6667 15 17.0398 15 17.5001C15 17.9603 15.3731 18.3334 15.8333 18.3334Z" stroke="#364153" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M1.7085 1.70825H3.37516L5.59183 12.0583C5.67314 12.4373 5.88405 12.7761 6.18826 13.0165C6.49246 13.2568 6.87092 13.3835 7.2585 13.3749H15.4085C15.7878 13.3743 16.1556 13.2443 16.451 13.0064C16.7465 12.7686 16.9519 12.437 17.0335 12.0666L18.4085 5.87492H4.26683" stroke="#364153" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_1_2807">
+								<rect width="20" height="20" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+							</a>
+						</li>
+					</ul>
+			</div>
+			</div>
+
+		</div>
+	</nav>
+	<main>
+		<div class="heroSection">
+			<div class="heroContainer">
+				<div class="heroContent">
+					<h1>Everything Your Pet Needs to Thrive</h1>
+					<p>Discover premium toys, treats, and accessories that bring joy to your furry friends. Quality products for happy, healthy pets.</p>
+					<div class="heroButtons">
+						<a href="shop.html" class="btn btnPrimary"><span>Shop Now</span> <img src="images/arrow-icon.svg" alt="Arrow Right Icon"/></a>
+						<a href="about.html" class="btn btnGhost">Learn More</a>
+					</div>
+				</div>
+				<div class="heroImage">
+					<img src="images/catAndDog.png" alt="Happy pets with toys and accessories">
+				</div>
+			</div>
+		</div>
+
+		<section class="sectionContainer">
+			<div class="sectionContent categoriesSection">
+				<h2>Shop by Category</h2>
+				<div class="categoriesContainer">
+					<div class="categoryCard">
+						<div class="imgContainer">
+							<img src="images/categories/for-dogs-category.png" alt="Dog Category">
+						</div>
+						<h4>For Dogs</h4>
+					</div>
+					<div class="categoryCard">
+						<div class="imgContainer">
+							<img src="images/categories/for-cats-category.png" alt="Cat Category">
+						</div>
+						<h4>For Cats</h4>
+					</div>
+					<div class="categoryCard">
+						<div class="imgContainer">
+							<img src="images/categories/pet-toys.png" alt="Toys Category">
+						</div>
+						<h4>Toys</h4>
+					</div>
+					<div class="categoryCard">
+						<div class="imgContainer">
+							<img src="images/categories/pet-treats.png" alt="Food Category">
+						</div>
+						<h4>Food & Treats</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sectionContainer">
+			<div class="sectionContent featuredProductsSection">
+				<div class="sectionHeader">
+					<h2>Featured Products</h2>
+					<a href="shop.html" class="viewAllLink">
+						<span>View All</span>
+						<img src="images/arrow-icon-orange.svg" alt="Arrow Right Icon"/>
+					</a>
+				</div>
+				
+				<div class="productsContainer">
+					<a href="shop.html" class="productCardLink">
+						<div class="productCard">
+							<div class="imgContainer">
+								<img class="productImage" src="images/products/pet-toys.png" alt="Product 1">
+								<div class="heart"></div>
+							</div>
+							<div class="productInfo">
+								<h4>Colorful Toy Set</h4>
+								<p class="price"><span>4.500 RSD</span> <span class="addToCart"><img src="images/cart-white.svg"/></span></p>
+							</div>
+						</div>
+					</a>
+					<a href="shop.html" class="productCardLink">
+						<div class="productCard">
+							<div class="imgContainer">
+								<img class="productImage" src="images/products/dog-clothes-2.png" alt="Product 2">
+								<div class="heart"></div>
+							</div>
+							<div class="productInfo">
+								<h4>Deluxe Dog Clothes</h4>
+								<p class="price"><span>12.300 RSD</span> <span class="addToCart"><img src="images/cart-white.svg"/></span></p>
+							</div>
+						</div>
+					</a>
+					<a href="shop.html" class="productCardLink">
+						<div class="productCard">
+							<div class="imgContainer">
+								<img class="productImage" src="images/products/cat-toy-4.png" alt="Product 3">
+								<div class="heart"></div>
+							</div>
+							<div class="productInfo">
+								<h4>Cat Scratcher</h4>
+								<p class="price"><span>9.800 RSD</span> <span class="addToCart"><img src="images/cart-white.svg"/></span></p>
+							</div>
+						</div>
+					</a>
+					<a href="shop.html" class="productCardLink">
+						<div class="productCard">
+							<div class="imgContainer">
+								<img class="productImage" src="images/products/hamster-food.png" alt="Product 4">
+								<div class="heart"></div>
+							</div>
+							<div class="productInfo">
+								<h4>Organic Hamster Food</h4>
+								<p class="price"><span>650 RSD</span> <span class="addToCart"><img src="images/cart-white.svg"/></span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="benefitsSection">
+			<div class="benefitsContainer">
+				<div class="benefitCard">
+					<div class="benefitIcon peach">
+						<img src="images/free-shipping.svg" alt="Free Shipping Icon">
+					</div>
+					<div class="benefitsText">
+						<h3>Free Shipping</h3>
+						<p>On orders over $50</p>
+					</div>
+				</div>
+				<div class="benefitCard">
+					<div class="benefitIcon skyBlue">
+						<img src="images/free-shipping.svg" alt="Quality Guarantee Icon">
+					</div>
+					<div class="benefitsText">
+						<h3>Quality Guarantee</h3>
+						<p>100% satisfaction guaranteed</p>
+					</div>
+				</div>
+				<div class="benefitCard">
+					<div class="benefitIcon pink">
+						<img src="images/free-shipping.svg" alt="Pet Approved Icon">
+					</div>
+					<div class="benefitsText">
+						<h3>Pet Approved</h3>
+						<p>Loved by pets everywhere</p>
+					</div>
+				</div>
+				<div class="benefitCard">
+					<div class="benefitIcon mint">
+						<img src="images/free-shipping.svg" alt="Fast Delivery Icon">
+					</div>
+					<div class="benefitsText">
+						<h3>Fast Delivery</h3>
+						<p>2-5 business days</p>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+		<section class="ctaSection">
+			<div class="ctaContainer">
+				<div class="ctaContent">
+					<div class="ctaText">
+						<h2>Join Our Pet Lovers Community</h2>
+						<p>Get exclusive deals, pet care tips, and early access to new products!</p>
+					</div>
+					<form class="ctaForm" action="" method="get">
+						<input type="email" name="email" placeholder="Enter your email" required>
+						<button type="submit" class="btn btnPrimary">Subscribe</button>
+					</form>
+				</div>
+				<div class="ctaImage">
+					<img class="ctaItems itemsA" src="images/animation/items.svg" alt="Pet Items SVG">
+					<img class="ctaItems itemsB" src="images/animation/items.svg" alt="Pet Items SVG">
+					<img class="ctaBowl" src="images/animation/bowl.svg" alt="Pet Bowl SVG">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footerContainer">
+			<div class="footerLogo">
+				<a href="index.html"><img src="images/logo.svg" alt="PawShop Logo">PawShop</a>
+				<p class="footerText">Your trusted pet shop for quality products and happy pets.</p>
+			</div>
+			<div class="quickLinks">
+				<h3>Quick Links</h3>
+				<ul class="footerLinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="quickLinks">
+				<h3>Project Resources</h3>
+				<ul class="footerLinks">
+					<li><a href="index.html">Github</a></li>
+					<li><a href="shop.html">Figma</a></li>
+				</ul>
+			</div>
+			<div class="quickLinks">
+				<h3>Stay Connected</h3>
+				<ul class="footerLinks">
+					<li><p class="footerText">Subscribe to get special offers and updates!</p></li>
+					<li class="socials">
+						<a href="https://www.linkedin.com/in/nocturne/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Icon"></a>
+						<a href="mailto:email@gmail.com"><img src="images/mailicon.svg" alt="Mail Icon"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyRight">
+			<p>&copy; 2026 Marija Milovanovic. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

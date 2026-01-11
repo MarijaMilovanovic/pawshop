@@ -1,0 +1,449 @@
+.sectionContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.sectionContainer .sectionContent {
+	max-width: 1380px;
+	width: 100%;
+	padding: 64px 16px;
+}
+
+@media screen and (min-width: 968px){
+	.sectionContainer .sectionContent {
+		max-width: 1380px;
+		width: 100%;
+		padding: 88px 32px;
+	}
+}
+
+.heroSection {
+	background-color: #FFF1E7;
+	background: linear-gradient(180deg, #FFF1E7 0%, #FFBDA1 100%);
+	padding: 64px 16px;
+	display: flex;
+	justify-content: center;
+}
+
+.heroContainer {
+	width: 100%;
+	max-width: 1380px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.heroContent {
+	width: 100%;
+}
+
+.heroContent h1 {
+	margin-bottom: 24px;
+}
+
+.heroContent p {
+	margin-bottom: 48px;
+	color: var(--text-light);
+}
+
+.heroButtons {
+	display: flex;
+	gap: 16px;
+}
+
+.heroImage {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.heroImage img{
+	margin-top: 48px;
+	width: calc(100% - 64px);
+}
+
+
+@media screen and (min-width: 968px) {
+	.heroSection {
+		background-color: #FFF1E7;
+		background: linear-gradient(90deg, #FFF1E7 0%, #FFBDA1 100%);
+		padding: 88px 0;
+	}
+
+	.heroContainer {
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	.heroContent {
+		max-width: 40%;
+	}
+
+	.heroImage {
+		width: unset;
+	}
+
+	.heroImage img{
+		margin-top: 0;
+		width: 100%
+	}
+}
+
+.categoriesSection {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+.categoriesSection h2 {
+	text-align: center;
+}
+
+.categoriesContainer {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.categoryCard {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.categoryCard .imgContainer {
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 160px;
+}
+
+.categoryCard .imgContainer img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1);
+	transition: transform 0.3s ease;
+}
+
+.categoryCard:hover .imgContainer img {
+	transform: scale(1.05);
+}
+
+.categoryCard:hover h4 {
+	color: var(--primary);
+	font-weight: 600;
+	font-size: 16px;
+}
+
+@media screen and (min-width: 968px) {
+	.categoriesSection {
+		display: flex;
+		flex-direction: column;
+		gap: 64px;
+	}
+
+	.categoryCard .imgContainer {
+		width: 286px;
+		height: 286px;
+		overflow: hidden;
+		border-radius: 286px;
+	}
+
+	.categoryCard:hover h4 {
+		font-size: 20px;
+	}
+}
+
+.featuredProductsSection {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+.featuredProductsSection .sectionHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: #ff6900;
+}
+
+.featuredProductsSection .viewAllLink {
+	text-decoration: none;
+	color: var(--primary);
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	transition: all 0.2s ease;
+}
+
+.featuredProductsSection .viewAllLink:hover {
+	color: var(--primary-hover);
+}
+
+.featuredProductsSection .productsContainer {
+	display: flex;
+	width: 100%;
+	gap: 24px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+@media screen and (min-width: 968px) {
+	.featuredProductsSection {
+		gap: 64px;
+	}
+
+	.featuredProductsSection .viewAllLink {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.featuredProductsSection .viewAllLink:hover {
+		gap: 12px;
+	}
+}
+
+.benefitsSection {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background-secondary);
+	padding: 64px 0;
+	
+}
+
+.benefitsContainer {
+	max-width: 1380px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	align-items: center;
+	justify-content: center;
+}
+
+.benefitCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 16px;
+}
+
+.benefitIcon {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.benefitIcon.peach {
+	background-color: var(--peach);
+}
+
+.benefitIcon.skyBlue {
+	background-color: var(--sky-blue);
+}
+
+.benefitIcon.pink {
+	background-color: var(--pink);
+}
+
+.benefitIcon.mint {
+	background-color: var(--mint);
+}
+
+.benefitsText {
+	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.benefitsText p {
+	color: var(--text-light);
+	font-size: 16px;
+	line-height: 20px;
+}
+
+@media screen and (min-width: 968px) {
+	.benefitsContainer {
+		justify-content: space-evenly;
+		height: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.benefitsSection {
+		margin: 64px 0;
+	}
+}
+
+.ctaSection {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 128px 0;
+}
+
+.ctaContainer {
+	max-width: 1380px;
+	width: 100%;
+	background-color: #FFF7ED;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 32px 16px;
+	border-radius: 16px;
+}
+
+.ctaContainer h2 {
+	color: black;
+}
+
+.ctaContent {
+	width: 100%;
+	max-width: 550px;
+	padding: 32px 16px;
+	gap: 32px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ctaText {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.ctaForm {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 16px;
+}
+
+.ctaForm input[type="email"] {
+	flex: 1;
+	padding: 16px;
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+.ctaForm button {
+	flex: 1;
+}
+
+.ctaImage {
+	position: relative;
+  width: 150px;
+  height: 120px;
+  overflow: hidden;
+	margin: 64px 0;
+	margin-right: 0;
+}
+
+.ctaImage img{
+	position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.ctaBowl{
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+}
+
+.ctaItems{
+	height: 80px;
+  z-index: 1;
+  top: -180px;
+  animation: itemsFall 2.6s linear infinite;
+}
+
+.itemsB{
+	height: 110px;
+  animation-delay: -1.3s;
+  opacity: 0;
+}
+
+@media screen and (min-width: 968px) {
+	.ctaContainer {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 64px 32px;
+		border-radius: 16px;
+	}
+
+	.ctaContent {
+		width: 50%;
+		padding: 48px;
+		gap: 48px;
+		justify-content: center;
+	}
+
+	.ctaForm {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		gap: 16px;
+	}
+
+	.ctaForm button {
+		flex: unset
+	}
+
+	.ctaImage {
+		position: relative;
+		width: 360px;
+		height: 320px;
+		margin: 0;
+		margin-right: 64px;
+	}
+
+	.ctaBowl{
+		bottom: 0;
+		width: 300px;
+		z-index: 2;
+	}
+
+	.ctaItems{
+		height: 200px;
+		z-index: 1;
+		top: -180px;
+		animation: itemsFall 2.6s linear infinite;
+	}
+
+	.itemsB{
+		height: 250px;
+		animation-delay: -1.3s;
+		opacity: 0;
+	}
+}
+
+@keyframes itemsFall{
+  0%   { transform: translate(-50%, 0) rotate(-6deg); opacity: 0; }
+  25%  { opacity: 1; }
+  70%  { transform: translate(-50%, 210px) rotate(6deg); opacity: 1; }
+  80%  { transform: translate(-50%, 270px) rotate(2deg); opacity: 0; }
+  100% { transform: translate(-50%, 0) rotate(-6deg); opacity: 0; }
+}
