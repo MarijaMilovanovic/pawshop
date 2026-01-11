@@ -71,6 +71,11 @@
 		margin: 0 auto;
 	}
 
+	.shopSubheading {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
 	.resultsCount {
 		font-size: 18px;
 		line-height: 28px;

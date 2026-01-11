@@ -161,4 +161,111 @@ main {
 	margin-bottom: 128px;
 }
 
+.challengeCard {
+	border-right: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
+	border-left: 4px solid var(--primary);
+	border-radius: 16px;
+	padding: 24px;
+	text-align: left;
+	width: 100%;
+	max-width: 980px;
+	width: 100%;
+	margin: 0 auto 64px;
+	box-sizing: border-box;
+}
 
+.challengeCard h3 {
+	margin-bottom: 16px;
+}
+
+.challengeCard p {
+	line-height: 32px;
+}
+
+.challengeSolution {
+	margin-bottom: 24px;
+}
+
+.aboutMeContainer {
+	width: 100%;
+	background: linear-gradient(180deg, #FFF5F2 0%, #F0F8FF 100%);
+	padding: 64px 16px 128px;
+	box-sizing: border-box;
+}
+
+.aboutMeContainer h2 {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.aboutMeContent {
+	width: 100%;
+	max-width: 1380px;
+	background-color: var(--background);
+	border-radius: 16px;
+	padding: 32px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	box-sizing: border-box;
+}
+
+.aboutMeImageContainer {
+	width: 100%;
+	max-width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin: 0 auto;
+	flex-shrink: 0;
+}
+
+.aboutMeImageContainer img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.aboutMeTextContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.aboutMeTextContainer h3 {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 700;
+	color: var(--text-color);
+	margin-bottom: 8px;
+}
+
+.aboutMeTextContainer .subtitle {
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--primary);
+	margin: 0;
+}
+
+.aboutMeTextContainer p {
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--text-light);
+	margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.aboutMeContent {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 64px;
+		padding: 64px 32px;
+	}
+
+	.aboutMeTextContainer {
+		width: 60%;
+	}
+}
