@@ -68,7 +68,7 @@
 	.heroSection {
 		background-color: #FFF1E7;
 		background: linear-gradient(90deg, #FFF1E7 0%, #FFBDA1 100%);
-		padding: 88px 0;
+		padding: 88px 64px;
 	}
 
 	.heroContainer {
